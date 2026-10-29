@@ -13,3 +13,6 @@ def budget_status (budget, total):
         return "Exactly equal to budget"
     else:
         return "Over budget"
+
+def event_summary(event_name, total, status):
+    return f"{event_name}: total {total} naira. {status}."    
