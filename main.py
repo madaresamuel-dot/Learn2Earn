@@ -88,4 +88,4 @@ print(summary)  # Expected: Study Day: total 15000 naira, Below budget.
 # Example 9: event_summary with a different event name and total
 different_summary = event_summary("Wedding Party", 25000, "Over budget")
 print(different_summary)  
-# Expected: Wedding Party: total 25000 naira, Over budget.
+# Expected: Wedding Party: total 25000 naira, Over budget.  
