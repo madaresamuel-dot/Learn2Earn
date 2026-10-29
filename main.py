@@ -20,7 +20,13 @@ def budget_status (budget, total):
 #Issue: none
 
 def event_summary(event_name, total, status):
-    return f"{event_name}: total {total} naira. {status}."    
+    return f"{event_name}: total {total} naira. {status}." 
+
+# Handover note
+# Component: event_summary
+# Returns: Exact readable summary:study day: total 15000 naira. Within budget
+# Tests: "study day: total 15000 naira. Within budget."
+# Issues: none   
 
 attendees = 10
 food_per_person = 800
