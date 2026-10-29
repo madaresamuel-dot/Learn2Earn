@@ -2,9 +2,19 @@ def participant_cost(attendees, food_per_person, transport_per_person):
     total_participant_cost = attendees * (food_per_person + transport_per_person)
     return total_participant_cost
 
+# Component: participant_cost
+# Returns: Total participant cost calculated by multiplying the number of attendees by the sum of food cost per person and transport cost per person.
+# Tests run: Verified that the function calculates the total cost correctly using the provided inputs.
+# Issue: None. The function works as expected.
+
 def event_total(attendees, food_per_person, transport_per_person, venue_cost):
     total = participant_cost(attendees, food_per_person, transport_per_person)
     return total + venue_cost
+
+# Component: event_total
+# Returns: The total event cost, calculated by adding the venue cost to the total participant cost.
+# Tests run: Verified that the function correctly calls participant_cost() and adds the venue cost to calculate the overall event budget.
+# Issue: None. The function works as expected.
 
 def budget_status (budget, total):
     if total < budget:
@@ -13,11 +23,6 @@ def budget_status (budget, total):
         return "Exactly equal to budget"
     else:
         return "Over budget"
-#Handover note
-#Component: budget_status
-#Returns: "Within budget" when total < budget, "Exactly equal to budget" when total == budget, otherwise "Over budget"
-#Tests: below budget, exactbudget, over budget
-#Issue: none
 
 def event_summary(event_name, total, status):
     return f"{event_name}: total {total} naira. {status}."    
