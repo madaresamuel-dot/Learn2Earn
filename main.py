@@ -23,6 +23,10 @@ def budget_status (budget, total):
         return "Exactly equal to budget"
     else:
         return "Over budget"
+#Component: budget_status
+#Returns: "Within budget" when total < budget, "Exactly equal to budget" when total == budget, otherwise "Over budget"
+#Tests: below budget, exactbudget, over budget
+#Issue: none
 
 def event_summary(event_name, total, status):
     return f"{event_name}: total {total} naira. {status}."    
